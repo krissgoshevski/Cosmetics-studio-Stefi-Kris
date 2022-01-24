@@ -1,0 +1,306 @@
+.row {
+    padding: 5px;
+
+}
+
+.btn {
+    border-radius: 50%; /* za okrugla forma */
+    width: 140px;
+    padding: 5px;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 20px;
+    /* go buta nagore */
+    background-color: black;
+    color: #f2f2f2;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: right;
+    margin: 30px;
+    left: 1050px !important;
+    /* da go buta na desno kolku PX SAKAS */
+}
+
+
+
+
+
+.prva{
+display:inline-block;	
+vertical-align:1px;
+}
+
+form.search {
+margin-bottom: -3.2rem;
+padding-top: 11px;
+}
+
+
+/* prvo */
+.lokacija{
+content: url('https://api.iconify.design/entypo/location-pin.svg?color=pink&width=24&height=24');
+position: absolute;
+left: 80px; 
+}
+
+.lok{
+display: inline-block;
+vertical-align: 5px;
+position: absolute;
+left:109px;
+}
+
+/*vtoro */
+.broj{
+content: url('https://api.iconify.design/bi/phone.svg?color=pink&width=23&height=23');
+position: absolute;
+left: 80px; 
+margin-bottom: 3.2rem;
+padding-top:25px;
+
+}
+
+.tel{
+display: inline-block;
+padding-top:25px;
+position: absolute;
+left:105px;
+}
+
+/* treto */
+.domasen{
+content: url('https://api.iconify.design/wpf/phone-office.svg?color=pink&width=23&height=23');
+position: absolute;
+left: 80px; 
+margin-bottom: 3.2rem;
+padding-top:48px;
+}
+.tt{
+display: inline-block;
+padding-top:45px;
+position: absolute;
+left:110px;
+}
+
+.rabvreme{
+content: url('https://api.iconify.design/bx/bx-time.svg?color=pink&width=23&height=23');
+position: absolute;
+left: 75px; 
+}
+
+.time{
+display: inline-block;
+vertical-align: 5px;
+position: absolute;
+left:105px;
+}
+
+.email{
+content: url('https://api.iconify.design/clarity/email-outline-alerted.svg?color=pink&width=23&height=23');
+position: absolute;
+left: 75px; 
+margin-bottom: 3.2rem;
+padding-top:25px;
+}
+.emailadress{
+display: inline-block;
+padding-top:25px;
+position: absolute;
+left:105px;
+}
+
+.fb{
+content: url('https://api.iconify.design/bi/facebook.svg?color=pink&width=24&height=24');
+position: absolute;
+left: 240px; 
+margin-bottom: 3.2rem;
+padding-top:25px;
+}
+.instagram{
+content: url('https://api.iconify.design/ri/instagram-fill.svg?color=pink&width=26&height=26');
+position: absolute;
+left: 240px; 
+margin-bottom: 3.2rem;
+padding-top:48px;
+}
+
+.b{
+padding-top:1rem;
+}
+
+.ne{
+padding-top:1rem;
+}
+
+.kontaktirajte{
+padding-top:1rem;
+}
+
+.kopcelogin{
+border-radius: 25%;
+
+position:absolute;
+    bottom: 540px;
+    /* go buta nagore */
+    background-color: #f2f2f2;
+    color: #333;
+    float: left;
+    margin: 20px;
+    left:500px;
+    border-radius: 40px;
+}
+.kopceregister{
+border-radius: 25%;
+position:absolute;
+    bottom: 540px;
+    /* go buta nagore */
+    background-color: #f2f2f2;
+    color: #333;
+    float: left;
+    margin: 20px;
+    left:400px;
+    border-radius: 40px;
+}
+
+.kopcelogin:hover{
+background-color: hotpink;
+}
+.kopceregister:hover{
+background-color: hotpink;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.slika1{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.slika2{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.slika3{
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.slika4{ 
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+
+
+
+

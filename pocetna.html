@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stefi.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="pocetna.css">
+    <link rel="stylesjeet" href="pocetna.js">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почетна страница STEFI-KRIS</title>
+</head>
+
+<body>
+    <div class="topnavs">
+
+        <form class="search" method="post">
+            <label>Search</label>
+            <input type="text" name="search">
+            <input type="submit" name="submit" value="Пребарај">
+        </form>
+
+        <a href="http://localhost/stefikris/cenovnik.html"> Ценовник </a>
+        <a href="http://localhost/stefikris/zanas.html">За нас</a>
+        <a href="http://localhost/stefikris/contact.html">Контакт</a>
+        <a class="active" href="http://localhost/stefikris/pocetna.html#about">Почетна</a>
+
+    </div>
+
+   <div class="containers">
+        <img src="cetkanew.jpg " alt="Norway " style="width:100%; height:520px;">
+      
+            <a href="http://localhost/stefikris/register.php">
+                <button type="button" class="kopceregister">Register</button>
+            </a>
+        
+            <a href="Login.php">
+                <button type="button" class="kopcelogin">Login</button>
+            </a>
+
+            <div class="card" style="width: 600px;">
+                <!-- za levo desno nad slikata 80 rem-->
+            <div class="card-body">
+            <h5 class="card-title">KOНТАКТИРАЈТЕ НЕ</h5>
+            <p class="card-text"> Доколку сакате да дознаете подетални информации за нас кликнете на копчето "Дознај повеќе"</p>
+            <a href="http://localhost/stefikris/contact.html"> <input type="submit" name="submit" value="Дознај повеќе" class="btn btn-primary"></a>
+        </div>
+     </div>
+  
+
+        <div class="top-lefts">
+            <hr class="linija">
+            <h3>
+                Фризерско козметичко студио STEFI-KRIS
+            </h3>
+            <hr class="linija ">
+        </div>
+
+        <table style="background-color:#333;" width="100%">
+            <tr>
+                <td>
+                    <a style="color:#f2f2f2" href="http://localhost/stefikris/frizuri.html">
+                        <kbd> Овде погледнете ги нашите слики од фризури </kbd>
+                    </a>
+                </td>
+
+                <td>
+                    <a style="color:#f2f2f2;" href="http://localhost/stefikris/nokti.html "><kbd>Овде погледнете ги нашите слики од нокти</kbd> </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <marquee style="background-color:#333; ">
+        <h5 style="color:#f2f2f2">Дозволете да се погрижиме за вашиот изглед !</h5>
+    </marquee>
+
+<center><h4 style="color: #333"> Погледнете дел од нашите фризури</h4> </center>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="4.png" class="slika1">
+      <div class="text">Прва фризура</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="2.png"  class="slika2">
+      <div class="text">Втора фризура</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="3.png" class="slika3">
+      <div class="text">Трета фризура</div>
+    </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+<Script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // da se menuva slikata na sekoj 2 seconds
+    }
+</script>
+
+
+    <div class="kontaktirajte">    
+     <center>  <h5 style="color:hotpink">
+          <b>КОНТАКТИРАЈТЕ НЕ ПОДОЛУ </b></h5>
+     </div> </center>
+    <div class="row">
+       
+        <div class="col-sm-4" style="background-color:#333; height: 160px; color:#f2f2f2">
+         <hr> <span class="lokacija"> </span>
+    <p style="font-size: 14px;" class="lok"> Свети Николе, ул.Младинска бр.48 </p> 
+            <hr> <span class="broj"></span>
+    <p style="font-size: 14px;" class="tel"> +389 71/381/323 </p>
+            <hr> <span class="domasen"></span>
+           <p class="tt" style="font-size: 14px;">032/ 441/232</p>
+        </div>
+
+
+<div class="col-sm-4" style="background-color:#333; color:#f2f2f2">
+    <hr> <span class="rabvreme"></span>
+    <p style="font-size: 14px;" class="time">Пон-Петок: 14:00-20:00/Сабота: 10:00-18:00 </p> 
+            <hr> <span class="email"></span>
+    <p style="font-size: 14px;" class="emailadress">jasminkagosevska@yahoo.com </p>
+           </div>
+
+
+        <div class="col-sm-4" style="background-color:#333; color:#f2f2f2">
+            <a href="https://www.facebook.com/STEFI-KRIS-DOOEL-553964794781041/"> <span class="fb"></span> </a> <br>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fp%2FCSbvjFsMRur%2F%3Futm_medium%3Dcopy_link%26fbclid%3DIwAR0EabqS7MMjubCN2kf3IvHe-4n37aARQ_LGqUUVmpACLCr7zFPUw94U7yA&h=AT3CokWAwjvKNnfpoPmqPvvbGRiz31EfV59An5tVecrPPSY_a3ScnKHoqA_Df3SSPYfIyWCXfflIbIsvUkTEudL1cajUuLMrWn9yrEp0zkrpa-zQNfVlicJuKzKsTThPS-lFUg">
+            <span class="instagram"></span> </a>   
+        </div>
+
+
+    </div>
+</body>
+</html>
+</html>
